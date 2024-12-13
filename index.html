@@ -1,12 +1,101 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Axcess.io Website</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Axcess.io - Custom Website</title>
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #005f73;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .main-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .hero-section {
+            background-color: #d9f4f2;
+            padding: 50px;
+            text-align: center;
+        }
+        .hero-section h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+        .cta-button {
+            padding: 15px 30px;
+            background-color: #008CBA;
+            color: white;
+            font-size: 1rem;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to Axcess.io Website </h1>
-    <p>This is a basic HTML page hosted on AWS Amplify.</p>
+    <header>
+        <h1>Welcome to Axcess.io</h1>
+        <p>Empowering your digital experience</p>
+    </header>
+
+    <div class="main-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1>Your Access to Innovation and Technology</h1>
+            <p>We provide top-notch solutions to drive your business forward. Explore our services now!</p>
+            <a href="#services" class="cta-button">Explore Services</a>
+        </section>
+
+        <!-- Services Section -->
+        <section id="services">
+            <h2>Our Services</h2>
+            <p>We offer a variety of technology solutions tailored to your needs.</p>
+            <ul>
+                <li><strong>Web Development</strong> - Build custom, scalable websites and applications.</li>
+                <li><strong>Cloud Solutions</strong> - Take your business to the next level with cloud computing.</li>
+                <li><strong>Security Services</strong> - Keep your data safe with our cybersecurity solutions.</li>
+            </ul>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>If you have any questions or need assistance, reach out to us!</p>
+            <form action="mailto:info@axcess.io" method="POST" enctype="text/plain">
+                <label for="name">Name:</label><br>
+                <input type="text" id="name" name="name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <input type="submit" value="Send Message">
+            </form>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Axcess.io | All Rights Reserved</p>
+        <p><a href="mailto:info@axcess.io" style="color: #fff;">info@axcess.io</a></p>
+    </footer>
+
 </body>
 </html>
+
